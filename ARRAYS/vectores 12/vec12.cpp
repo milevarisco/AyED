@@ -24,7 +24,6 @@ int cantElementos(Alumno v[], int tam){
     return i;
 }
 
-
 void aprobadosf(Alumno alumnos[], int tam, Alumno alumnosAprobados[]){
     int k = 0;
     for (int i = 0; i < tam; i++){
@@ -40,6 +39,7 @@ void aprobadosf(Alumno alumnos[], int tam, Alumno alumnosAprobados[]){
        }
     }
 }
+
 double promedio(double notas[]){
     double suma = 0;
     for (int i = 0; i < 4; i++){
@@ -48,7 +48,6 @@ double promedio(double notas[]){
 
     return suma/4;
 }
-
 
 void cargarAlumno (Alumno &alumno){
     cout << "ingrese apellido: ";
@@ -68,7 +67,6 @@ void cargarAlumno (Alumno &alumno){
     }
     alumno.promedio = promedio(alumno.notas);
 }
-
 
 void mostrarAlumno(Alumno &alumno){
     cout << "apellido: ";
